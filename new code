@@ -1,0 +1,66 @@
+pragma solidity ^0.4.6;
+
+contract SimpleStorage
+{
+    int storeData = 0;
+    
+    function set(int x)
+    {
+        /*for (int i = x; i < 10; i++)
+        {
+            storeData++;
+        }*/
+        
+        /*int i = x;
+        while (i < 10)
+        {
+            storeData++;
+            
+            i++;*/
+            
+            /*
+            ETHER UNITS
+            -----------
+            Wei
+            Finney
+            Szabo
+            Ether*/
+            
+            if (2000000000000 wei == 1 ether)
+            {
+                storeData = 2;
+            }
+            else
+            {
+                storeData = 3;
+            }
+            /*
+            TIME UNITS
+            ---------
+            seconds
+            minutes
+            hours
+            days
+            weeks
+            months
+            years
+            */
+            
+            if (120 seconds == 1 minutes)
+            {
+                storeData = 6;
+            }
+            else
+            {
+                storeData = 9;
+                
+            }
+                
+            
+    }
+    
+    function get() constant returns (int retVal)
+    {
+        return storeData;
+    }
+}
